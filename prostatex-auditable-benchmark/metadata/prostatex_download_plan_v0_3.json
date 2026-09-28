@@ -1,0 +1,54 @@
+{
+  "protocol_id": "PROSTATEx-selection-v0.3",
+  "status": "READY_FOR_BATCHED_IMAGE_RETRIEVAL",
+  "patients": 197,
+  "findings": 319,
+  "unique_series": 396,
+  "series_rows": 396,
+  "folds": {
+    "0": {
+      "patients": 39,
+      "series": 78,
+      "reported_DICOM_instances": 1568
+    },
+    "1": {
+      "patients": 40,
+      "series": 80,
+      "reported_DICOM_instances": 1579
+    },
+    "2": {
+      "patients": 39,
+      "series": 80,
+      "reported_DICOM_instances": 1599
+    },
+    "3": {
+      "patients": 39,
+      "series": 78,
+      "reported_DICOM_instances": 1551
+    },
+    "4": {
+      "patients": 40,
+      "series": 80,
+      "reported_DICOM_instances": 1614
+    }
+  },
+  "resolved_exception": {
+    "patient": "ProstateX-0025",
+    "series": 4,
+    "studies": 2,
+    "finding_assignments": 5
+  },
+  "excluded": {
+    "development_QC_patients": [
+      "ProstateX-0000",
+      "ProstateX-0001",
+      "ProstateX-0002",
+      "ProstateX-0003",
+      "ProstateX-0004",
+      "ProstateX-0005"
+    ],
+    "no_canonical_T2": [
+      "ProstateX-0191"
+    ]
+  }
+}

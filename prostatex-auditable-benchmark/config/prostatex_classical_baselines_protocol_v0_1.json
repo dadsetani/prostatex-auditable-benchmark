@@ -1,0 +1,74 @@
+{
+  "protocol_id": "PROSTATEx-classical-baselines-v0.1",
+  "frozen_date": "2026-09-28",
+  "purpose": "Matched non-neural controls for the frozen PROSTATEx T2, ADC, and paired-patch CNN baselines",
+  "cohort": {
+    "primary_patients": 191,
+    "primary_findings": 306,
+    "ClinSig_TRUE": 65,
+    "ClinSig_FALSE": 241,
+    "outer_folds": 5,
+    "fold_assignments": "Unchanged from PROSTATEx-selection-v0.3"
+  },
+  "inputs": {
+    "modalities": ["T2", "ADC", "paired T2/ADC"],
+    "patch_shape_per_channel": [100, 100],
+    "stored_values": "Unnormalized source stored values; all learned scaling is fitted on training folds only",
+    "engineered_features_per_channel": 210,
+    "feature_definition": [
+      "100 non-overlapping 10x10 block means",
+      "100 non-overlapping 10x10 block standard deviations",
+      "Global mean, standard deviation, minimum, maximum, 10th/25th/50th/75th/90th percentiles, and exact-zero fraction"
+    ]
+  },
+  "split_protocol": {
+    "test_fold": "Each outer fold in turn",
+    "validation_fold": "The next cyclic outer fold",
+    "training_folds": "The remaining three outer folds",
+    "patient_overlap_permitted": false,
+    "final_model_refit_on_validation": false,
+    "selection_metric": "Validation ROC AUC",
+    "tie_rule": "First candidate in the frozen grid"
+  },
+  "models": {
+    "logistic": {
+      "pipeline": "StandardScaler plus class-weighted liblinear logistic regression",
+      "C": [0.001, 0.01, 0.1, 1.0, 10.0]
+    },
+    "rbf_svm": {
+      "pipeline": "StandardScaler plus class-weighted probability-enabled RBF SVM",
+      "C": [0.1, 1.0, 10.0],
+      "gamma": ["scale", 0.01]
+    },
+    "random_forest": {
+      "n_estimators": 500,
+      "max_depth": [null, 6, 12],
+      "min_samples_leaf": [1, 4],
+      "max_features": "sqrt",
+      "class_weight": "balanced_subsample"
+    }
+  },
+  "random_seed": 1729,
+  "analyses": {
+    "primary": "All 306 accepted findings",
+    "sensitivity": "ADC and paired models retrained after removing ProstateX-0052 finding 1 from every split"
+  },
+  "planned_runs": 75,
+  "metrics": [
+    "ROC AUC",
+    "average precision",
+    "accuracy",
+    "balanced accuracy",
+    "sensitivity",
+    "specificity",
+    "precision",
+    "F1",
+    "Brier score"
+  ],
+  "uncertainty": {
+    "method": "Patient-level percentile bootstrap of complete out-of-fold predictions",
+    "replicates": 2000,
+    "seed": 97531
+  },
+  "interpretation": "These models are controls for the fixed CNN, not radiomics models and not clinical diagnostic systems."
+}

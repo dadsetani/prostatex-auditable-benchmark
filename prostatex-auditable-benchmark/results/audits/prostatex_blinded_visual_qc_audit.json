@@ -1,0 +1,34 @@
+{
+  "qc_id": "PROSTATEx-blinded-technical-visual-QC-v0.3",
+  "frozen_date": "2026-09-27",
+  "status": "COMPLETE_WITH_REVIEW_REQUIRED",
+  "scope": "AI-assisted technical display review; not radiologist review, registration validation, diagnosis, or clinical image-quality assessment",
+  "reviewed_findings": 306,
+  "status_counts": {
+    "NO_OBVIOUS_TECHNICAL_ISSUE": 305,
+    "REVIEW_REQUIRED": 1
+  },
+  "review_required_ids": [
+    "BQC019"
+  ],
+  "blinding": {
+    "preview_omitted_identity": true,
+    "preview_omitted_ClinSig": true,
+    "review_csv_omitted_identity": true,
+    "identity_key_retained_separately": true,
+    "formal_independent_blinding_claimed": false
+  },
+  "review_basis": [
+    "Nine identity- and label-hidden contact sheets covering all 306 paired patches.",
+    "Dedicated enlarged review of high ADC zero-fraction and low-variance cases.",
+    "Per-channel descriptive intensity statistics; no label-dependent thresholding."
+  ],
+  "completed_review": {
+    "file": "review_ai_technical_frozen.csv",
+    "bytes": 148324,
+    "sha256": "af0dc322e660c6312a5ee40658dc85a6660fafc66b9ee0184abb422cb29d2a97"
+  },
+  "decision_policy": "REVIEW_REQUIRED does not automatically exclude or modify a patch; investigate source data before freezing model inputs.",
+  "targeted_investigation": "BQC019 was unblinded only after statuses were frozen; the native ADC footprint, not resampling, was confirmed to be nearly all zero.",
+  "next_step": "Obtain qualified label-hidden review of ProstateX-0052 finding 1 and freeze a cohort-wide handling rule before model fitting."
+}

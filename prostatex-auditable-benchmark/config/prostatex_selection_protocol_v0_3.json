@@ -1,0 +1,167 @@
+{
+  "protocol_id": "PROSTATEx-selection-v0.3",
+  "status": "FROZEN_FOR_BATCHED_IMAGE_RETRIEVAL",
+  "frozen_date": "2026-09-17",
+  "timing": "Frozen after six-patient development QC and before full-cohort metadata inventory, image download, split generation, or model training; not a prospective preregistration.",
+  "task": "Finding-level binary classification of recorded ClinSig at a supplied physical position; not whole-image detection, segmentation, or clinical diagnosis.",
+  "finding_identity": [
+    "ProxID",
+    "fid",
+    "pos_mm"
+  ],
+  "pilot_policy": {
+    "patients": [
+      "ProstateX-0000",
+      "ProstateX-0001",
+      "ProstateX-0002",
+      "ProstateX-0003",
+      "ProstateX-0004",
+      "ProstateX-0005"
+    ],
+    "role": "Development QC only",
+    "exclusion": "Exclude all six patients from every reported model-fitting, hyperparameter-selection, validation, and test set.",
+    "reason": "Their labels, series alternatives, geometry, patches, and visual outputs were repeatedly inspected during pipeline development."
+  },
+  "candidate_discovery": {
+    "source_requirements": [
+      "Patient must occur in the findings CSV and training manifest.",
+      "Candidate description and series number must match ProstateX-Images-Train.csv and one API series record.",
+      "T2 candidates use exact normalized description t2_tse_tra.",
+      "ADC candidates use descriptions whose normalized value ends with _ADC.",
+      "Series UID must occur in the supplied training manifest."
+    ],
+    "selection_unit": "Select a T2/ADC pair from the same patient and StudyInstanceUID; confirm FrameOfReferenceUID after DICOM retrieval.",
+    "tie_break": "Among multiple eligible pairs, rank ascending by T2 SeriesNumber, ADC SeriesNumber, T2 SeriesInstanceUID, then ADC SeriesInstanceUID. This metadata-only rule must not use labels, image appearance, model scores, or acquisition order as a quality claim.",
+    "alternates": "Retain every eligible nonprimary pair in the register. A sensitivity analysis substitutes alternates without duplicating a patient across splits.",
+    "no_pair": "If no eligible same-study pair remains, exclude from the paired-channel primary analysis and record eligibility separately for prespecified single-channel analyses."
+  },
+  "post_download_hard_checks": [
+    "Archive CRC, unique member names, bounded uncompressed size, expected DICOM count.",
+    "Patient, study, series, modality, SOP class and SOP instance identities; no repeated SOP Instance UID.",
+    "Supported classic single-frame native pixel encoding or explicit review before extension.",
+    "Consistent dimensions, orientation and spacing; orthonormal in-plane directions; monotonic regular physical slice steps.",
+    "Supplied point and complete 100x100, 0.5-mm T2-parallel grid must lie inside source pixel-center bounds for each used channel; no padding or clipping.",
+    "Padding, rescale, modality-LUT, real-world-value, or related intensity semantics trigger explicit review; they are not silently ignored."
+  ],
+  "non_exclusion_observations": [
+    "Exact native or interpolated zero values alone are not an exclusion criterion.",
+    "Nonblank appearance, common study/frame identifiers, or matching coordinates do not establish anatomical registration or clinical quality.",
+    "Human or AI visual impressions cannot alter series selection unless a separate qualified-review protocol is approved before outcome analysis."
+  ],
+  "split_rule_reserved_for_next_stage": "After full eligibility is known, create patient-level grouped splits. All findings from one patient remain in one split. Freeze patient IDs and seed before patch extraction and modeling.",
+  "modeling_order_reserved_for_later": [
+    "T2-only baseline",
+    "ADC-only baseline",
+    "paired T2+ADC baseline",
+    "only then augmentation and search ablations"
+  ],
+  "provenance_limit": "Current findings and imaging CSV contents are internally hash-tracked but official label-file provenance has not been independently established.",
+  "pilot_summary": {
+    "patients": 6,
+    "findings": 10,
+    "ClinSig_TRUE": 4,
+    "ClinSig_FALSE": 6,
+    "candidate_series": 13,
+    "repeated_T2_patients": [
+      "ProstateX-0001"
+    ]
+  },
+  "source_sha256": {
+    "prism-uploads/ProstateX-TrainingLesionInformationv2.zip": "fe862406213c058d7d714439f86a8df15efea7507aa7da3732a10fd9347c7c5e",
+    "prism-uploads/inventory.json": "9a23e5caca444e5e8fe0ea4b4e6f839cfaa790467509c79dd9538b7303a20a08",
+    "analysis/prostatex_patch_pilot_output/metadata.json": "2eb84f828471fed1f40dfa885fa50467c2c1c1639cfe4d40c53328910f787633",
+    "analysis/prostatex_remaining_four_geometry.json": "98d09212216d9f0ca6e851da0e4d33d014ba1b63e181223c197e8f227d78d2a3",
+    "analysis/prostatex_0001_comparison.json": "7caff29a2724d0ae15523d8033dd21d990477d1ac0cf82a41a7a912f251820bb",
+    "prism-uploads/qc01_pydicom_20260916_205759_755261report.json": "e40ee8b0f53cae2155301d08514d0c16428de3981b1b46bb55e3931ffc107fa9",
+    "ProstateX-Findings-Train.csv": "311c21c44691eb73868ca77f36f814300114117ca3aece209b5a446cf5fcf70f"
+  },
+  "amended_date": "2026-09-26",
+  "supersedes": {
+    "protocol_id": "PROSTATEx-selection-v0.2",
+    "sha256": "d18f0465abe1ff4e39e8e4a4ffd786f97d80282be6c3f938ea90600a59ef4501"
+  },
+  "amendment_timing": "Written after resolving the ProstateX-0025 multi-study exception and before bulk cohort image retrieval, full patch extraction, or model training.",
+  "metadata_inventory": {
+    "bundle_sha256": "bfb848cc895336686bf84153db304f4a750a7122d43530af059dbc31828032ce",
+    "api_snapshot_sha256": "0521fb3f3cf543a0f7b40025ae8020f5c295cb110c55990070e8e9866e984d55",
+    "api_retrieval_completed_utc": "2026-09-17T12:14:07.099690+00:00"
+  },
+  "noncanonical_T2_rule": {
+    "patient": "ProstateX-0191",
+    "reason": "No exact t2_tse_tra candidate exists under the frozen canonical rule.",
+    "action": "Exclude from the paired primary cohort and primary modality comparisons. Retain ADC eligibility only for a separately labeled supplementary analysis. Do not introduce t2_tse_tra_Grappa3 as an ad hoc exception."
+  },
+  "patient_folds": {
+    "eligible_patients": 197,
+    "excluded_development_patients": [
+      "ProstateX-0000",
+      "ProstateX-0001",
+      "ProstateX-0002",
+      "ProstateX-0003",
+      "ProstateX-0004",
+      "ProstateX-0005"
+    ],
+    "paired_primary_exclusion": [
+      "ProstateX-0191"
+    ],
+    "pending_multi_study_patient": [],
+    "fold_count": 5,
+    "salt": "PROSTATEx-selection-v0.2|outer-folds|2026-09-17",
+    "assignment": "Deterministic greedy allocation: positive patients first by descending TRUE/finding counts and salted hash, minimizing positive-patient, TRUE, finding, and patient counts; negative-only patients next by descending finding count and salted hash, minimizing patient, FALSE, and finding counts.",
+    "evaluation_cycle": "For run k, fold k is test, fold (k+1) mod 5 is validation, and the other three folds are training. Augmentation and all learned preprocessing fit training patients only; GA/model selection uses validation only; test labels remain untouched until final scoring.",
+    "failure_policy": "Post-download exclusions remain in their assigned fold and are not replaced or moved.",
+    "resolved_multi_study_patient": [
+      "ProstateX-0025"
+    ]
+  },
+  "ready_before_download": {
+    "patients": 197,
+    "findings": 319,
+    "ClinSig_TRUE": 72,
+    "ClinSig_FALSE": 247,
+    "planned_unique_series": 396,
+    "excluded_development_patients": 6,
+    "excluded_no_canonical_T2": [
+      "ProstateX-0191"
+    ]
+  },
+  "multi_study_resolution": {
+    "patient": "ProstateX-0025",
+    "evidence_bundle_sha256": "78d7c07c9c07d846fd0d37e99974428280c170daf116ac5e2bf6cc6ce435e085",
+    "status": "COMPLETE_UNIQUE_ASSIGNMENTS",
+    "rule": "Use the study assigned by complete paired-grid pixel-center bounds for each full finding key; do not apply a cross-study UID tie-break.",
+    "finding_assignments": [
+      {
+        "full_key": "ProstateX-0025|1|34.8707 51.5015 -3.06943",
+        "assigned_study_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.101137934734515856187339619047"
+      },
+      {
+        "full_key": "ProstateX-0025|1|23.6983 51.83 -55.7923",
+        "assigned_study_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.260163101010991858039197694584"
+      },
+      {
+        "full_key": "ProstateX-0025|2|7.79027 54.6192 -55.072",
+        "assigned_study_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.260163101010991858039197694584"
+      },
+      {
+        "full_key": "ProstateX-0025|3|-8.32488 41.9199 -51.1366",
+        "assigned_study_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.260163101010991858039197694584"
+      },
+      {
+        "full_key": "ProstateX-0025|4|21.9659 22.9866 -63.5253",
+        "assigned_study_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.260163101010991858039197694584"
+      }
+    ],
+    "patient_fold": 2,
+    "interpretation_limit": "Geometry-only source assignment; not anatomical registration, image-quality, label, or clinical validation."
+  },
+  "batched_retrieval": {
+    "unit": "One frozen outer fold per output bundle",
+    "folds": 5,
+    "planned_unique_series": 396,
+    "planned_rows": 396,
+    "resume_rule": "Within one Kaggle session, reuse only files whose recorded series UID, ZIP CRC, DICOM count, and archive SHA-256 pass validation.",
+    "failure_rule": "Preserve and return a FAILED or REVIEW_REQUIRED report; do not silently skip, substitute, or move a patient between folds.",
+    "post_download_rule": "Audit identities, encoding, physical geometry, paired FrameOfReferenceUID, intensity semantics, and complete per-finding T2-parallel grid bounds before patch extraction."
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "manifest_version": "0.1.0",
+  "generated_date": "2026-09-28",
+  "large_archives": [
+    {
+      "artifact_id": "cnn_full_runs",
+      "filename": "prostatex_baselines_full_v0_1.zip",
+      "bytes": 1925516,
+      "sha256": "c7fc82123b9ff845c61d052871b63477721d740ff3c4f4a877271e62b7536c38",
+      "bundled_in_git": false,
+      "recommended_location": "GitHub release or Zenodo"
+    },
+    {
+      "artifact_id": "cnn_summary",
+      "filename": "prostatex_baseline_summary_v0_1.zip",
+      "bytes": 68012,
+      "sha256": "1f6f3d267b3cce1624908ca78d9bcf9d9a7fb18d39f2af5a26a1b2e685a289c4",
+      "bundled_in_git": false,
+      "recommended_location": "Extracted text files are included under results/predictions/cnn"
+    },
+    {
+      "artifact_id": "classical_full_runs",
+      "filename": "prostatex_classical_baselines_full_v0_1.zip",
+      "bytes": 16316139,
+      "sha256": "580157db6172eb68b0c5b3e320f72927ae3833c4397adc2479ffa42df78a1dd2",
+      "bundled_in_git": false,
+      "recommended_location": "GitHub release or Zenodo"
+    },
+    {
+      "artifact_id": "classical_summary",
+      "filename": "prostatex_classical_summary_v0_1.zip",
+      "bytes": 186777,
+      "sha256": "86714f8ee85443a6fbe2f8e40067767be478dce8d60d057e36ea65c7cf8c725a",
+      "bundled_in_git": false,
+      "recommended_location": "Extracted text files are included under results/predictions/classical"
+    }
+  ],
+  "frozen_patch_arrays": [
+    {
+      "outer_fold": 0,
+      "filename": "prostatex_patches_fold_0_v0_3/patches.npz",
+      "bytes": 4205626,
+      "sha256": "f72f85f5dfd709874ee2c47e4585c52d6a284b235174bbd341c7fd1b3346f509",
+      "bundled_in_git": false,
+      "metadata_bundled_in_git": true
+    },
+    {
+      "outer_fold": 1,
+      "filename": "prostatex_patches_fold_1_v0_3/patches.npz",
+      "bytes": 3716803,
+      "sha256": "4a17dda9d5f698f247c243dd96e3fdcebaba4e83247294be72decedbca2b9a39",
+      "bundled_in_git": false,
+      "metadata_bundled_in_git": true
+    },
+    {
+      "outer_fold": 2,
+      "filename": "prostatex_patches_fold_2_v0_3/patches.npz",
+      "bytes": 4086254,
+      "sha256": "ac4231be687337e310b89aee03ec95ddce79c9603dcde94343e10b1cecc72728",
+      "bundled_in_git": false,
+      "metadata_bundled_in_git": true
+    },
+    {
+      "outer_fold": 3,
+      "filename": "prostatex_patches_fold_3_v0_3/patches.npz",
+      "bytes": 4086817,
+      "sha256": "afa3052e2e2279df819b04a0abcd66da0d190c196e8e8ab3f12e0449a32227cf",
+      "bundled_in_git": false,
+      "metadata_bundled_in_git": true
+    },
+    {
+      "outer_fold": 4,
+      "filename": "prostatex_patches_fold_4_v0_3/patches.npz",
+      "bytes": 3939144,
+      "sha256": "ee9302a8ca6741bc13da1b3be7f4a2f59b9a475e62bf8e67b2062511af80817e",
+      "bundled_in_git": false,
+      "metadata_bundled_in_git": true
+    }
+  ],
+  "retrieval_archives": [
+    {
+      "filename": "prostatex_fold_0_retrieval_20260926_082133_056947.zip",
+      "bytes": 161063285,
+      "sha256": "9e0dfd404ece1ac83e9c9a412b4c3e0fe80830207986065058296bc9867fe9fb",
+      "bundled_in_git": false,
+      "chunk_manifest": "retrieval-manifests/fold0_manifest.json"
+    },
+    {
+      "filename": "prostatex_fold_1_retrieval_20260926_182614_902144.zip",
+      "bytes": 161468077,
+      "sha256": "441473beee58cee8ebbe00bd468ba645c3387ccc3f042f3ac46b88649d993856",
+      "bundled_in_git": false,
+      "chunk_manifest": "retrieval-manifests/fold1_final_manifest.json"
+    },
+    {
+      "filename": "prostatex_fold_2_retrieval_20260927_192426_882183.zip",
+      "bytes": 164372862,
+      "sha256": "649dfa804bcc6124912d1c1cedd80c946cfca011d81c9715562cb52f2c6bb9c1",
+      "bundled_in_git": false,
+      "chunk_manifest": "retrieval-manifests/fold2_manifest.json"
+    },
+    {
+      "filename": "prostatex_fold_3_retrieval_20260927_204734_778970.zip",
+      "bytes": 168483683,
+      "sha256": "b5a67237d878c9f03fef603a7a81e4b7ca6044d8e01dbd6872538954ab18cb96",
+      "bundled_in_git": false,
+      "chunk_manifest": "retrieval-manifests/fold3_manifest.json"
+    },
+    {
+      "filename": "prostatex_fold_4_retrieval_20260927_214606_754861.zip",
+      "bytes": 165843259,
+      "sha256": "ad719885175fd83a666373ba7d9ce595fb2de68bf7ee6493b95914015e1aec43",
+      "bundled_in_git": false,
+      "chunk_manifest": "retrieval-manifests/fold4_manifest.json"
+    }
+  ]
+}

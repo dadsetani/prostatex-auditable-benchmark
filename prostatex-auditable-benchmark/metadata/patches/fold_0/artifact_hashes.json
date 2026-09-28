@@ -1,0 +1,14 @@
+{
+  "patches.npz": {
+    "bytes": 4205626,
+    "sha256": "f72f85f5dfd709874ee2c47e4585c52d6a284b235174bbd341c7fd1b3346f509"
+  },
+  "metadata.json": {
+    "bytes": 108053,
+    "sha256": "38cedd6c69838497ff0120dd2ebb8b9a925f5e0f6e2f6d34b9e1c83687538af6"
+  },
+  "source_series.csv": {
+    "bytes": 25057,
+    "sha256": "a819ed70a0854412884ea173383f035f08ca9baa638034ae6bcb2bd9ed1467f7"
+  }
+}

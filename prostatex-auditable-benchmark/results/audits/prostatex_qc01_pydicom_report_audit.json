@@ -1,0 +1,53 @@
+{
+  "scope": "Local reconciliation of the uploaded Kaggle pydicom report; not a local pydicom rerun or clinical review",
+  "checked_utc": "2026-09-16T21:01:36.544478+00:00",
+  "uploaded_report_path": "prism-uploads/qc01_pydicom_20260916_205759_755261report.json",
+  "uploaded_report_sha256": "e40ee8b0f53cae2155301d08514d0c16428de3981b1b46bb55e3931ffc107fa9",
+  "reported_status": "TECHNICAL_MATCH",
+  "reported_software": {
+    "python": "3.12.13",
+    "numpy": "2.0.2",
+    "pydicom": "3.0.2"
+  },
+  "local_checks": {
+    "source_and_patch_bundle_hashes_match": true,
+    "dicom_file_hashes_matched": 38,
+    "stored_pixel_hashes_matched": 38,
+    "native_zero_counts_matched": 38,
+    "script_bytes_plus_one_final_LF_match_reported_code_hash": true
+  },
+  "reported_comparison": {
+    "T2_axial": {
+      "passed": true,
+      "max_abs_difference_float64_vs_reference": 1.5255249650181213e-05,
+      "mean_abs_difference": 4.188487995080336e-06,
+      "float32_differing_pixels": 0,
+      "max_claimed_bound_difference_voxels": 0.0,
+      "outside_points": 0,
+      "zero_mask_differing_pixels": 0,
+      "zero_trace_mismatches": 0,
+      "native_volume_zero_percent": 3.3151013112207606,
+      "patch_zero_percent": 0.0
+    },
+    "ADC": {
+      "passed": true,
+      "max_abs_difference_float64_vs_reference": 0.00012129825472584344,
+      "mean_abs_difference": 2.324377595058751e-05,
+      "float32_differing_pixels": 0,
+      "max_claimed_bound_difference_voxels": 0.0,
+      "outside_points": 0,
+      "zero_mask_differing_pixels": 0,
+      "zero_trace_mismatches": 0,
+      "native_volume_zero_percent": 58.17522321428571,
+      "patch_zero_percent": 16.18
+    }
+  },
+  "reported_semantic_flags": {
+    "T2_axial": [],
+    "ADC": []
+  },
+  "reconstructed_npz_received": false,
+  "local_pydicom_execution_performed": false,
+  "conclusion": "The uploaded execution report supports technical reconstruction agreement for QC01 with a separate decoder and manual interpolation. Local byte/hash checks tie all 38 reported instances to the existing sources. This does not establish anatomy, ADC units, label provenance, or dataset-wide validity.",
+  "next_action": "Retain this report and reconstructed.npz; no further repetition of the same QC01 check is required without new discrepancies. Keep unresolved clinical/semantic questions separate from extraction reproducibility."
+}

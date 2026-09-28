@@ -1,0 +1,64 @@
+{
+  "scope": "Local merge, integrity verification, and report reconciliation of the final split PROSTATEx outer-fold 1 retrieval bundle; no local DICOM decoding or clinical review",
+  "checked_date": "2026-09-27",
+  "split_manifest": "prism-uploads/fold1_final_manifest.json",
+  "merged_bundle": "analysis/prostatex_fold_1_retrieval_20260926_182614_902144.zip",
+  "merged_bytes": 161468077,
+  "merged_sha256": "441473beee58cee8ebbe00bd468ba645c3387ccc3f042f3ac46b88649d993856",
+  "split_parts": 7,
+  "all_part_hashes_passed": true,
+  "outer_crc_passed": true,
+  "duplicate_archive_members": false,
+  "archive_members": 84,
+  "artifact_manifest_entries": 83,
+  "artifact_hashes_passed": true,
+  "artifact_sizes_passed": true,
+  "reported_status": "COMPLETE_WITH_EXCLUSIONS",
+  "reported_execution": {
+    "created_utc": "2026-09-26T18:26:14.902397+00:00",
+    "completed_utc": "2026-09-26T18:26:25.866553+00:00",
+    "outer_fold": 1,
+    "patients": 40,
+    "series": 80,
+    "findings": 63,
+    "series_source": {
+      "CACHE": 80
+    }
+  },
+  "reported_results": {
+    "passed_series_geometry": 79,
+    "failed_series_geometry": 1,
+    "passed_patients": 37,
+    "excluded_patients": 3,
+    "passed_findings": 57,
+    "excluded_findings": 6,
+    "out_of_bounds_findings": 0,
+    "semantic_flags": 0
+  },
+  "exclusions": [
+    {
+      "patient": "ProstateX-0038",
+      "finding_count": 3,
+      "finding_status": "EXCLUDED_SOURCE_GEOMETRY",
+      "reason": "ADC series failed the regular slice-step hard check"
+    },
+    {
+      "patient": "ProstateX-0199",
+      "finding_count": 2,
+      "finding_status": "EXCLUDED_CROSS_CHANNEL_FRAME",
+      "reason": "T2 axial and ADC FrameOfReferenceUID values differ"
+    },
+    {
+      "patient": "ProstateX-0201",
+      "finding_count": 1,
+      "finding_status": "EXCLUDED_CROSS_CHANNEL_FRAME",
+      "reason": "T2 axial and ADC FrameOfReferenceUID values differ"
+    }
+  ],
+  "conclusion": "Fold 1 retrieval and the scripted technical audit completed successfully with three protocol-preserving patient exclusions. All 80 planned series and 40 patients were represented; 57 findings from 37 patients passed the complete paired-grid audit.",
+  "limitations": [
+    "This local reconciliation verifies bundle bytes and the reported audit results but does not repeat pydicom decoding locally.",
+    "The result does not establish anatomical registration, image quality, ADC physical units, label correctness, or clinical validity."
+  ],
+  "next_step": "Retrieve and audit frozen outer fold 2 using the same final script and protocol."
+}

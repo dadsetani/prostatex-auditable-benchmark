@@ -1,0 +1,48 @@
+{
+  "bundle_sha256": "27446e611b60b5343548a3fbeba730dac680bc694eb44cd86d883215090d0f67",
+  "kaggle_software": {
+    "python": "3.12.13",
+    "numpy": "2.0.2",
+    "scipy": "1.16.3"
+  },
+  "source_image_hashes_match": {
+    "T2_axial": true,
+    "ADC": true
+  },
+  "source_csv_hashes_match": {
+    "ProstateX-Images-Train.csv": true,
+    "ProstateX-Findings-Train.csv": true
+  },
+  "patch_comparison": {
+    "T2_axial_fid_1": {
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    "T2_axial_fid_2": {
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    "ADC_fid_1": {
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    "ADC_fid_2": {
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    }
+  },
+  "shape": [
+    2,
+    2,
+    100,
+    100
+  ],
+  "finite_values": true,
+  "labels_match_full_finding_keys": true,
+  "geometry_and_bounds_match": true,
+  "scope": "Local recomputation with the same algorithm; not independent clinical or dataset-wide validation"
+}

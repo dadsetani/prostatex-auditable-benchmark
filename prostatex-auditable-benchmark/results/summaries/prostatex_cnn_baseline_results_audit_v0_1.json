@@ -1,0 +1,119 @@
+{
+  "audit_id": "PROSTATEx-CNN-baseline-results-v0.1",
+  "checked_date": "2026-09-28",
+  "status": "COMPLETE",
+  "source_archive": {
+    "path": "prism-uploads/prostatex_baseline_summary_v0_1.zip",
+    "bytes": 68012,
+    "sha256": "1f6f3d267b3cce1624908ca78d9bcf9d9a7fb18d39f2af5a26a1b2e685a289c4",
+    "zip_crc_check_passed": true
+  },
+  "full_run_archive": {
+    "path": "prism-uploads/prostatex_baselines_full_v0_1.zip",
+    "bytes": 1925516,
+    "sha256": "c7fc82123b9ff845c61d052871b63477721d740ff3c4f4a877271e62b7536c38",
+    "zip_crc_check_passed": true,
+    "result_files": 75,
+    "model_state_files": 75,
+    "history_files": 75,
+    "prediction_files": 75,
+    "run_index_files": 1
+  },
+  "protocol_id": "PROSTATEx-modeling-v0.1",
+  "runs": 75,
+  "primary_cohort": {
+    "patients": 191,
+    "findings": 306,
+    "ClinSig_TRUE": 65,
+    "ClinSig_FALSE": 241
+  },
+  "configurations": [
+    {
+      "modality": "T2",
+      "variant": "primary",
+      "findings": 306,
+      "ROC_AUC": 0.6085541015001595,
+      "ROC_AUC_95_CI": [0.5308325012620678, 0.6821938740293356],
+      "average_precision": 0.27511817487754076,
+      "accuracy": 0.5490196078431373,
+      "balanced_accuracy": 0.5957229492499202,
+      "sensitivity": 0.676923076923077,
+      "specificity": 0.5145228215767634,
+      "Brier_score": 0.248403709620084
+    },
+    {
+      "modality": "ADC",
+      "variant": "primary",
+      "findings": 306,
+      "ROC_AUC": 0.6479412703479094,
+      "ROC_AUC_95_CI": [0.5744617829696986, 0.7217904530205334],
+      "average_precision": 0.31547307547569103,
+      "accuracy": 0.6274509803921569,
+      "balanced_accuracy": 0.6286626236833706,
+      "sensitivity": 0.6307692307692307,
+      "specificity": 0.6265560165975104,
+      "Brier_score": 0.23605611157040735
+    },
+    {
+      "modality": "paired T2/ADC",
+      "variant": "primary",
+      "findings": 306,
+      "ROC_AUC": 0.6633897223108841,
+      "ROC_AUC_95_CI": [0.5923330021267451, 0.735705214032829],
+      "average_precision": 0.31891617857712357,
+      "accuracy": 0.5849673202614379,
+      "balanced_accuracy": 0.6129269071177785,
+      "sensitivity": 0.6615384615384615,
+      "specificity": 0.5643153526970954,
+      "Brier_score": 0.23550438223158543
+    },
+    {
+      "modality": "ADC",
+      "variant": "sensitivity exclusion",
+      "findings": 305,
+      "ROC_AUC": 0.6438461538461538,
+      "ROC_AUC_95_CI": [0.5746860725618048, 0.714286733529028]
+    },
+    {
+      "modality": "paired T2/ADC",
+      "variant": "sensitivity exclusion",
+      "findings": 305,
+      "ROC_AUC": 0.6712820512820513,
+      "ROC_AUC_95_CI": [0.6003352494488815, 0.738695945226554]
+    }
+  ],
+  "independent_checks": {
+    "all_five_prediction_tables_present": true,
+    "configuration_counts_match_summary": true,
+    "patient_counts_match_summary": true,
+    "labels_and_unique_finding_keys_valid": true,
+    "all_reported_metrics_recomputed_from_predictions": true,
+    "sensitivity_finding_removed": true,
+    "patient_bootstrap_replicates": 2000
+  },
+  "paired_primary_comparisons": {
+    "bootstrap_unit": "patient",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 24681357,
+    "T2_ADC_minus_ADC_AUC": {
+      "observed_difference": 0.01544845196297473,
+      "difference_95_CI": [-0.06420551316051189, 0.09452466273904199]
+    },
+    "T2_ADC_minus_T2_AUC": {
+      "observed_difference": 0.05483562081072457,
+      "difference_95_CI": [-0.005112265569735335, 0.11572863746208337]
+    },
+    "ADC_minus_T2_AUC": {
+      "observed_difference": 0.03938716884774984,
+      "difference_95_CI": [-0.052208789408598806, 0.13197418283285217]
+    },
+    "conclusion": "All three percentile intervals include zero; no pairwise AUC advantage is established."
+  },
+  "interpretation": "The paired-channel fixed CNN had the highest primary out-of-fold ROC AUC, but discrimination was modest and confidence intervals overlapped. Excluding the single finding with limited native ADC support did not materially change the qualitative conclusion.",
+  "limitations": [
+    "This is an exploratory fixed-CNN baseline and not an evaluation of the CNN-GAN-GA framework on MRI.",
+    "The analysis uses one public cohort without external validation.",
+    "ADC physical units and qualified diagnostic image-quality review remain unavailable.",
+    "Confidence intervals quantify patient resampling uncertainty and do not correct for all model-development choices."
+  ]
+}

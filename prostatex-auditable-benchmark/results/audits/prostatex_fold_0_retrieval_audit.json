@@ -1,0 +1,35 @@
+{
+  "scope": "Local merge, integrity verification, and report reconciliation of the split PROSTATEx outer-fold 0 retrieval bundle; no local DICOM decoding or clinical review",
+  "checked_date": "2026-09-26",
+  "split_manifest": "prism-uploads/fold0_manifest.json",
+  "merged_bundle": "analysis/prostatex_fold_0_retrieval_20260926_082133_056947.zip",
+  "merged_bytes": 161063285,
+  "merged_sha256": "9e0dfd404ece1ac83e9c9a412b4c3e0fe80830207986065058296bc9867fe9fb",
+  "split_parts": 7,
+  "all_part_hashes_passed": true,
+  "outer_crc_passed": true,
+  "duplicate_archive_members": false,
+  "artifact_manifest_entries": 81,
+  "artifact_hashes_passed": true,
+  "reported_status": "COMPLETE",
+  "reported_execution": {
+    "created_utc": "2026-09-26T08:21:33.057076+00:00",
+    "completed_utc": "2026-09-26T08:30:15.772292+00:00",
+    "outer_fold": 0,
+    "patients": 39,
+    "series": 78,
+    "findings": 64
+  },
+  "reported_results": {
+    "fresh_TCIA_series": 78,
+    "failed_findings": 0,
+    "passed_findings": 64,
+    "semantic_flags": 0
+  },
+  "conclusion": "Fold 0 retrieval and the scripted technical audit completed successfully. All 78 planned series and 39 patients were represented, and all 64 complete paired T2/ADC sampling grids passed pixel-center bounds checks.",
+  "limitations": [
+    "This local reconciliation verifies bundle bytes and reported results but does not repeat pydicom decoding locally.",
+    "The result does not establish anatomical registration, image quality, ADC physical units, label correctness, or clinical validity."
+  ],
+  "next_step": "Retrieve and audit frozen outer fold 1 using the same protocol and script."
+}

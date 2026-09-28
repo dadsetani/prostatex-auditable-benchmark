@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-17T12:20:05.470327+00:00",
+  "generator": "/codex_workspace/e37180f1-ce7f-4dab-8160-f9b2a3714dca/analysis/prostatex_finalize_metadata_protocol.py",
+  "generator_sha256": "8cdc422fd7477c02e39124e2d982fb712e2da1449400435d5cc61c4217d96341",
+  "source_bundle_sha256": "bfb848cc895336686bf84153db304f4a750a7122d43530af059dbc31828032ce",
+  "artifacts": {
+    "analysis/prostatex_selection_protocol_v0_2.json": {
+      "sha256": "baaf53dce68ce198bf4619a46f0042591c884caa845c8be6d5234ca63bb3293a",
+      "bytes": 8272
+    },
+    "analysis/prostatex_patient_folds_v0_2.csv": {
+      "sha256": "0fef5624eb6f92f3b838f635ce0914e89c146298edfad4ee9d7f822fd2a78da8",
+      "bytes": 10402
+    },
+    "analysis/prostatex_patient_folds_v0_2.json": {
+      "sha256": "da094623f2bf9ef45ad9ca1a9c5cbc7fa2e605cdc7dc01eecacd0bfd1e385b26",
+      "bytes": 1255
+    },
+    "analysis/prostatex_download_plan_v0_2.csv": {
+      "sha256": "5ca7f172df1313cf838926be169aa7f5585facb36b771670c1721056d4535bed",
+      "bytes": 92571
+    },
+    "analysis/prostatex_download_plan_v0_2.json": {
+      "sha256": "65bd59b1c2bd86bd918ddd9f8f686597c6531137d0dbd8448f75af01b258cb95",
+      "bytes": 791
+    },
+    "analysis/prostatex_full_metadata_inventory_audit.json": {
+      "sha256": "1d6eab729cb8c5a9c853b83cfdec5c498c48d88b244a396707c53ad45e1f447c",
+      "bytes": 2096
+    },
+    "analysis/prostatex_selection_protocol_v0_2.md": {
+      "sha256": "de2ff515c122d076132b5e922702f4f9aca8ecf2388de816d139dda19600a845",
+      "bytes": 1903
+    }
+  }
+}

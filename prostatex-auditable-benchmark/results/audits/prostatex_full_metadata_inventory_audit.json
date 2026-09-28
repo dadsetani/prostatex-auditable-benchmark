@@ -1,0 +1,51 @@
+{
+  "scope": "Local integrity and structural audit of the uploaded full metadata inventory; no image retrieval or clinical validation",
+  "checked_utc": "2026-09-17T12:20:05.467921+00:00",
+  "bundle_path": "prism-uploads/prostatex_full_metadata_20260917_121401_877544.zip",
+  "bundle_sha256": "bfb848cc895336686bf84153db304f4a750a7122d43530af059dbc31828032ce",
+  "archive_crc_pass": true,
+  "artifact_hashes_and_sizes_match": true,
+  "api_http_status": 200,
+  "api_server_date": "Thu, 17 Sep 2026 12:14:04 GMT",
+  "api_snapshot_sha256": "0521fb3f3cf543a0f7b40025ae8020f5c295cb110c55990070e8e9866e984d55",
+  "api_series_count": 18321,
+  "api_patient_count": 346,
+  "api_series_uids_unique": true,
+  "labeled_patients": 204,
+  "findings": 330,
+  "candidate_rows": 464,
+  "all_candidate_rows_eligible_metadata": true,
+  "primary_pair_rows": 203,
+  "alternate_pair_rows": 55,
+  "patients_with_alternates": 51,
+  "local_manifest_hash_matches": true,
+  "local_protocol_v0_1_hash_matches": true,
+  "label_zip_container_hash_matches": false,
+  "label_csv_content_hashes_match": true,
+  "preinventory_rows_content_equal_after_line_ending_normalization": true,
+  "exceptions": {
+    "ProstateX-0025": {
+      "status": "MULTI_STUDY_FINDING_ASSIGNMENT_REQUIRED",
+      "findings": 5,
+      "ClinSig_TRUE": 0,
+      "ClinSig_FALSE": 5,
+      "eligible_study_pairs": 2
+    },
+    "ProstateX-0191": {
+      "status": "PAIRED_PRIMARY_EXCLUDED_NO_CANONICAL_T2",
+      "findings": 1,
+      "ClinSig_TRUE": 0,
+      "ClinSig_FALSE": 1,
+      "eligible_ADC_series": 3
+    }
+  },
+  "protocol_amendment": "analysis/prostatex_selection_protocol_v0_2.json",
+  "fold_manifest": "analysis/prostatex_patient_folds_v0_2.csv",
+  "download_plan": "analysis/prostatex_download_plan_v0_2.csv",
+  "limitations": [
+    "Metadata matching does not validate DICOM geometry or clinical quality",
+    "ProstateX-0025 finding-to-study association remains pending image geometry",
+    "ProstateX-0191 is outside the paired primary cohort",
+    "Official label-container provenance remains unverified despite matching CSV hashes"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "inventory_sha256": "9a23e5caca444e5e8fe0ea4b4e6f839cfaa790467509c79dd9538b7303a20a08",
+  "candidate_rows": 11,
+  "unique_series_uids": 11,
+  "patient_count": 5,
+  "manifest_hash_matches": true,
+  "imaging_csv_hash_matches": true,
+  "all_uids_in_local_manifest": true,
+  "candidate_key_set_matches_local_csv": true,
+  "one_reported_study_per_patient": true,
+  "raw_api_responses_independently_checked": false,
+  "note": "Raw response files were not uploaded. API counts, identity assignments and api_matches are reported fields, not independently verified against raw responses or DICOM. No final series selection."
+}
