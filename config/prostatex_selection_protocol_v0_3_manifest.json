@@ -1,6 +1,6 @@
 {
   "created_utc": "2026-09-26T07:16:10.663496+00:00",
-  "generator": "/codex_workspace/e37180f1-ce7f-4dab-8160-f9b2a3714dca/analysis/prostatex_freeze_post_0025.py",
+  "generator": "src/prostatex_freeze_post_0025.py",
   "generator_sha256": "5672ad27255e0af03961aaf2c71ca99c0f51e449415cb0727f5e144bf1a67734",
   "source_sha256": {
     "analysis/prostatex_selection_protocol_v0_2.json": "d18f0465abe1ff4e39e8e4a4ffd786f97d80282be6c3f938ea90600a59ef4501",
