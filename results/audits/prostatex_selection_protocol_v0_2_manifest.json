@@ -1,6 +1,6 @@
 {
   "created_utc": "2026-09-17T12:20:05.470327+00:00",
-  "generator": "/codex_workspace/e37180f1-ce7f-4dab-8160-f9b2a3714dca/analysis/prostatex_finalize_metadata_protocol.py",
+  "generator": "src/prostatex_finalize_metadata_protocol.py",
   "generator_sha256": "8cdc422fd7477c02e39124e2d982fb712e2da1449400435d5cc61c4217d96341",
   "source_bundle_sha256": "bfb848cc895336686bf84153db304f4a750a7122d43530af059dbc31828032ce",
   "artifacts": {
