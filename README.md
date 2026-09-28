@@ -29,6 +29,10 @@ This is a reproducible computational benchmark, not an externally validated clin
 
 PROSTATEx source images are available from The Cancer Imaging Archive. Raw DICOM data are not redistributed in this repository. See `docs/data-access.md` and the dataset citation in the manuscript.
 
+## Data Provenance
+
+Kaggle was used only as a computational environment for selected retrieval, quality-control, and modeling tasks. The MRI series were downloaded directly from the official TCIA NBIA API. The retrieval code validates the final TCIA host, DICOM series identity, archive integrity, and SHA-256 checksums. Kaggle dataset-directory names are not treated as data provenance.
+
 ## Environment
 
 Create an isolated Python environment using Python 3.12 or a compatible version, then install:
@@ -63,4 +67,4 @@ Full model-run archives and frozen patch archives are intentionally excluded fro
 
 ## License
 
-No software or data license has yet been selected. Add an appropriate code license and confirm the applicable PROSTATEx/TCIA terms before making the repository public.
+Original source code is released under the MIT License; see `LICENSE`. This license does not relicense PROSTATEx/TCIA images, labels, identifiers, DICOM metadata, or other third-party material.
