@@ -1,0 +1,82 @@
+{
+  "audit_id": "PROSTATEx-classical-baseline-results-v0.1",
+  "checked_date": "2026-09-28",
+  "status": "COMPLETE",
+  "source_archive": {
+    "path": "prism-uploads/prostatex_classical_summary_v0_1.zip",
+    "bytes": 186777,
+    "sha256": "86714f8ee85443a6fbe2f8e40067767be478dce8d60d057e36ea65c7cf8c725a",
+    "zip_crc_check_passed": true,
+    "prediction_files": 15
+  },
+  "full_run_archive": {
+    "path": "prism-uploads/prostatex_classical_baselines_full_v0_1.zip",
+    "bytes": 16316139,
+    "sha256": "580157db6172eb68b0c5b3e320f72927ae3833c4397adc2479ffa42df78a1dd2",
+    "zip_crc_check_passed": true,
+    "archive_members": 301,
+    "result_files": 75,
+    "model_files": 75,
+    "candidate_score_files": 75,
+    "prediction_files": 75,
+    "run_index_files": 1
+  },
+  "protocol_id": "PROSTATEx-classical-baselines-v0.1",
+  "configurations": 15,
+  "primary_cohort": {
+    "patients": 191,
+    "findings": 306,
+    "ClinSig_TRUE": 65,
+    "ClinSig_FALSE": 241
+  },
+  "primary_results": [
+    {"model": "logistic", "modality": "T2", "ROC_AUC": 0.5962974784551548, "ROC_AUC_95_CI": [0.5089039506711776, 0.6780726429554023], "average_precision": 0.291735510167706, "Brier_score": 0.24237421150040628},
+    {"model": "logistic", "modality": "ADC", "ROC_AUC": 0.6882859878710501, "ROC_AUC_95_CI": [0.617896072194085, 0.759767728675457], "average_precision": 0.4169682113506463, "Brier_score": 0.22083097457754525},
+    {"model": "logistic", "modality": "paired T2/ADC", "ROC_AUC": 0.6524098308330674, "ROC_AUC_95_CI": [0.5732881724118218, 0.7284902968611361], "average_precision": 0.345788840176827, "Brier_score": 0.2244703329550081},
+    {"model": "RBF SVM", "modality": "T2", "ROC_AUC": 0.5867858282796042, "ROC_AUC_95_CI": [0.5055765884611295, 0.6652100269033172], "average_precision": 0.30090139484897677, "Brier_score": 0.16470476476245788},
+    {"model": "RBF SVM", "modality": "ADC", "ROC_AUC": 0.6722630067028408, "ROC_AUC_95_CI": [0.5915207626260381, 0.7432080594749916], "average_precision": 0.34463934750384895, "Brier_score": 0.15907322975916566},
+    {"model": "RBF SVM", "modality": "paired T2/ADC", "ROC_AUC": 0.6711777848707309, "ROC_AUC_95_CI": [0.5891682222852114, 0.749149520573682], "average_precision": 0.3579584103924877, "Brier_score": 0.15892969702058388},
+    {"model": "random forest", "modality": "T2", "ROC_AUC": 0.6269709543568465, "ROC_AUC_95_CI": [0.5543729441382246, 0.7009252374479739], "average_precision": 0.3199623597826567, "Brier_score": 0.1618060122984754},
+    {"model": "random forest", "modality": "ADC", "ROC_AUC": 0.7204596233641877, "ROC_AUC_95_CI": [0.6515724608954294, 0.7882351011730598], "average_precision": 0.3691982643068237, "Brier_score": 0.15412661425773644},
+    {"model": "random forest", "modality": "paired T2/ADC", "ROC_AUC": 0.702968400893712, "ROC_AUC_95_CI": [0.6307188739905923, 0.7729152441166138], "average_precision": 0.3793901401620617, "Brier_score": 0.1551806601584343}
+  ],
+  "sensitivity_AUC": {
+    "logistic_ADC": 0.6871794871794872,
+    "logistic_paired": 0.6591025641025641,
+    "RBF_SVM_ADC": 0.6722435897435898,
+    "RBF_SVM_paired": 0.6736538461538462,
+    "random_forest_ADC": 0.721025641025641,
+    "random_forest_paired": 0.7086538461538462
+  },
+  "paired_modality_matched_bootstrap_comparisons": {
+    "replicates": 10000,
+    "seed": 86420,
+    "random_forest_ADC_minus_CNN_ADC_AUC": {
+      "observed_difference": 0.0725183530162783,
+      "difference_95_CI": [0.008407192803888523, 0.13966780865039027]
+    },
+    "other_eight_classical_minus_modality_matched_CNN_AUC_intervals_include_zero": true,
+    "multiplicity_adjustment": "none; comparisons are exploratory"
+  },
+  "independent_checks": {
+    "all_prediction_tables_present": true,
+    "configuration_counts_match_summary": true,
+    "patient_counts_match_summary": true,
+    "labels_and_unique_finding_keys_valid": true,
+    "all_reported_metrics_recomputed_from_predictions": true,
+    "sensitivity_finding_removed": true,
+    "patient_bootstrap_replicates_in_summary": 2000,
+    "full_run_index_matches_all_result_files": true,
+    "selected_parameters_match_first_maximum_validation_AUC_candidate": true,
+    "all_75_fold_prediction_tables_match_summary_exactly": true,
+    "all_75_model_files_present": true,
+    "model_files_deserialized_during_audit": false
+  },
+  "interpretation": "Random-forest ADC had the highest primary classical AUC and exceeded the modality-matched ADC CNN in an exploratory paired patient bootstrap without multiplicity adjustment. The other eight modality-matched classical-versus-CNN AUC intervals included zero. Classical sensitivity analyses did not materially alter the ranking.",
+  "limitations": [
+    "The engineered intensity summaries are compact controls, not a validated radiomics pipeline.",
+    "Threshold-dependent performance is sensitive to class imbalance and probability calibration.",
+    "All comparisons use one public cohort without external validation.",
+    "The classical and CNN searches differ in model family and tuning grids and are not equal-compute comparisons."
+  ]
+}

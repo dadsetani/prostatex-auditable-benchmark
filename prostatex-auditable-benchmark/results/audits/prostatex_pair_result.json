@@ -1,0 +1,605 @@
+{
+  "series": {
+    "T2_axial": {
+      "scope": "One uploaded classic MR series; no clinical or whole-dataset validation",
+      "image_zip_sha256": "c56eeeb12d6b4dda5a726c1dc7b3ca813d4501b52abe76bff222ade4a4d2fe88",
+      "labels_zip_sha256": "fe862406213c058d7d714439f86a8df15efea7507aa7da3732a10fd9347c7c5e",
+      "patient": "ProstateX-0002",
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.479812804428819225709948044920",
+      "description": "t2_tse_tra",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.170110802438282744747565588784",
+      "frame_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.216292633397710489088373841125",
+      "rescale_tags_by_slice": [
+        {
+          "filename": "00000001.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000006.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000002.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000019.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000010.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000008.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000013.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000015.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000011.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000003.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000016.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000009.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000014.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000004.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000007.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000012.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000005.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000017.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000018.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        }
+      ],
+      "series_number": "4",
+      "dicom_files": 19,
+      "rows": 384,
+      "columns": 384,
+      "pixel_spacing_mm": [
+        0.5,
+        0.5
+      ],
+      "slice_spacing_mm": 2.999999968442436,
+      "max_step_deviation_mm": 1.4834932220431085e-06,
+      "dicom_affine_ijk_to_patient": [
+        [
+          0.5,
+          1.025517e-10,
+          0.0,
+          -103.53361703934
+        ],
+        [
+          -9.963405e-11,
+          0.485774559559565,
+          0.7105144924587772,
+          -72.2766766895
+        ],
+        [
+          2.428815e-11,
+          -0.1184190748347,
+          2.9146473142836107,
+          -35.353980293869
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "findings": [
+        {
+          "fid": "2",
+          "ClinSig": "FALSE",
+          "pos_mm": [
+            -2.058,
+            38.6752,
+            -34.6104
+          ],
+          "dicom_continuous_ijk": [
+            202.9512340345339,
+            215.23817886087662,
+            9.000020747003452
+          ],
+          "worldmatrix_continuous_ijk": [
+            203.45199995575126,
+            215.73797918173378,
+            9.500000257931577
+          ],
+          "csv_ijk": [
+            203.0,
+            216.0,
+            10.0
+          ],
+          "worldmatrix_minus_dicom_ijk": [
+            0.5007659212173508,
+            0.49980032085716175,
+            0.4999795109281244
+          ],
+          "csv_ijk_equals_rounded_worldmatrix": true,
+          "worldmatrix_in_dicom_coordinates": [
+            [
+              1.0,
+              4.31738994861179e-16,
+              6.168893786788238e-16,
+              -0.5007659212174672
+            ],
+            [
+              1.2083872814317862e-16,
+              1.0000008203716035,
+              -2.2290560696644903e-06,
+              -0.4999561301358233
+            ],
+            [
+              -1.2245182953683701e-17,
+              5.9006228804205915e-08,
+              1.0000008308907975,
+              -0.5000001342754761
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "nearest_slice_zero_based": 9,
+          "nearest_filename": "00000003.dcm",
+          "instance_number": "10",
+          "distance_to_plane_mm": 6.1893556627533e-05
+        },
+        {
+          "fid": "1",
+          "ClinSig": "TRUE",
+          "pos_mm": [
+            -27.0102,
+            41.5467,
+            -26.0469
+          ],
+          "dicom_continuous_ijk": [
+            153.0468340342215,
+            216.7614581378612,
+            12.000001321344955
+          ],
+          "worldmatrix_continuous_ijk": [
+            153.54759995543887,
+            217.26126389617798,
+            12.499978249735683
+          ],
+          "csv_ijk": [
+            154.0,
+            217.0,
+            12.0
+          ],
+          "worldmatrix_minus_dicom_ijk": [
+            0.5007659212173792,
+            0.4998057583167679,
+            0.49997692839072805
+          ],
+          "csv_ijk_equals_rounded_worldmatrix": true,
+          "worldmatrix_in_dicom_coordinates": [
+            [
+              1.0,
+              4.31738994861179e-16,
+              6.168893786788238e-16,
+              -0.5007659212174672
+            ],
+            [
+              1.2083872814317862e-16,
+              1.0000008203716035,
+              -2.2290560696644903e-06,
+              -0.4999561301358233
+            ],
+            [
+              -1.2245182953683701e-17,
+              5.9006228804205915e-08,
+              1.0000008308907975,
+              -0.5000001342754761
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "nearest_slice_zero_based": 12,
+          "nearest_filename": "00000014.dcm",
+          "instance_number": "7",
+          "distance_to_plane_mm": 3.5046101514812138e-06
+        }
+      ]
+    },
+    "ADC": {
+      "scope": "One uploaded classic MR series; no clinical or whole-dataset validation",
+      "image_zip_sha256": "5496d6f3358fd720b8ea1a0fcbeeb69b96b648c720d77eef356b3b4555c922db",
+      "labels_zip_sha256": "fe862406213c058d7d714439f86a8df15efea7507aa7da3732a10fd9347c7c5e",
+      "patient": "ProstateX-0002",
+      "series_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.227755318954832018272622878067",
+      "description": "ep2d_diff_tra_DYNDIST_ADC",
+      "study_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.170110802438282744747565588784",
+      "frame_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.216292633397710489088373841125",
+      "rescale_tags_by_slice": [
+        {
+          "filename": "00000004.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000007.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000017.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000013.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000005.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000019.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000012.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000003.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000014.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000008.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000001.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000011.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000010.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000018.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000002.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000009.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000015.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000006.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        },
+        {
+          "filename": "00000016.dcm",
+          "rescale_intercept": null,
+          "rescale_slope": null,
+          "rescale_type": null
+        }
+      ],
+      "series_number": "7",
+      "dicom_files": 19,
+      "rows": 128,
+      "columns": 84,
+      "pixel_spacing_mm": [
+        2.0,
+        2.0
+      ],
+      "slice_spacing_mm": 2.9999999684423306,
+      "max_step_deviation_mm": 1.4834934363161523e-06,
+      "dicom_affine_ijk_to_patient": [
+        [
+          2.0,
+          4.102068e-10,
+          0.0,
+          -91.533617045907
+        ],
+        [
+          -3.985362e-10,
+          1.94309823823826,
+          0.7105144924585558,
+          -103.3662485037
+        ],
+        [
+          9.71526e-11,
+          -0.4736762993388,
+          2.914647314283556,
+          -27.775159503864
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "findings": [
+        {
+          "fid": "2",
+          "ClinSig": "FALSE",
+          "pos_mm": [
+            -2.058,
+            38.6752,
+            -34.6104
+          ],
+          "dicom_continuous_ijk": [
+            44.737808508635325,
+            69.80954471521859,
+            9.000020747003088
+          ],
+          "worldmatrix_continuous_ijk": [
+            45.23779998557929,
+            70.30947100563573,
+            9.49997735016916
+          ],
+          "csv_ijk": [
+            45.0,
+            70.0,
+            9.0
+          ],
+          "worldmatrix_minus_dicom_ijk": [
+            0.4999914769439613,
+            0.499926290417136,
+            0.4999566031660727
+          ],
+          "csv_ijk_equals_rounded_worldmatrix": true,
+          "worldmatrix_in_dicom_coordinates": [
+            [
+              1.0,
+              -6.82610051431103e-17,
+              1.5422232394993973e-16,
+              -0.4999914769439595
+            ],
+            [
+              9.715491147885587e-17,
+              1.0000008203716035,
+              -5.572639163950462e-07,
+              -0.49997867631602794
+            ],
+            [
+              1.5789210140920683e-17,
+              2.36024915216832e-07,
+              1.0000008308908328,
+              -0.499981091397099
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "nearest_slice_zero_based": 9,
+          "nearest_filename": "00000008.dcm",
+          "instance_number": "10",
+          "distance_to_plane_mm": 6.189355591057515e-05
+        },
+        {
+          "fid": "1",
+          "ClinSig": "TRUE",
+          "pos_mm": [
+            -27.0102,
+            41.5467,
+            -26.0469
+          ],
+          "dicom_continuous_ijk": [
+            32.26170850855721,
+            70.19036453446502,
+            12.000001321344696
+          ],
+          "worldmatrix_continuous_ijk": [
+            32.76169998550118,
+            70.69029218424677,
+            12.49995534197327
+          ],
+          "csv_ijk": [
+            33.0,
+            71.0,
+            12.0
+          ],
+          "worldmatrix_minus_dicom_ijk": [
+            0.4999914769439684,
+            0.4999276497817533,
+            0.4999540206285733
+          ],
+          "csv_ijk_equals_rounded_worldmatrix": true,
+          "worldmatrix_in_dicom_coordinates": [
+            [
+              1.0,
+              -6.82610051431103e-17,
+              1.5422232394993973e-16,
+              -0.4999914769439595
+            ],
+            [
+              9.715491147885587e-17,
+              1.0000008203716035,
+              -5.572639163950462e-07,
+              -0.49997867631602794
+            ],
+            [
+              1.5789210140920683e-17,
+              2.36024915216832e-07,
+              1.0000008308908328,
+              -0.499981091397099
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "nearest_slice_zero_based": 12,
+          "nearest_filename": "00000010.dcm",
+          "instance_number": "7",
+          "distance_to_plane_mm": 3.5046091034995364e-06
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "same_patient_study_frame": true,
+    "same_orientation_within_tolerance": true,
+    "max_corresponding_plane_separation_mm": 2.2838291056389067e-12,
+    "t2_ijk_to_adc_ijk_from_headers": [
+      [
+        0.25,
+        0.0,
+        -2.0719746806420302e-23,
+        -5.999999999998158
+      ],
+      [
+        0.0,
+        0.25,
+        1.0102098164350421e-13,
+        15.99999999999852
+      ],
+      [
+        0.0,
+        4.010014470226131e-18,
+        1.0000000000000353,
+        -6.834239045230745e-13
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "max_finding_transform_error_in_voxels": 1.4210854715202004e-14,
+    "meaning": "Header-defined geometry only; no anatomical registration accuracy established"
+  }
+}

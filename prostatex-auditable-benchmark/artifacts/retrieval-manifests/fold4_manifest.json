@@ -1,0 +1,43 @@
+{
+  "original_filename": "prostatex_fold_4_retrieval_20260927_214606_754861.zip",
+  "original_bytes": 165843259,
+  "original_sha256": "ad719885175fd83a666373ba7d9ce595fb2de68bf7ee6493b95914015e1aec43",
+  "chunk_size": 26214400,
+  "parts": [
+    {
+      "name": "fold4.part001.bin",
+      "bytes": 26214400,
+      "sha256": "70a369e15cfceecf1a5c770b9eeff62cf8f829c84e840daa877e10cd0c7e0a4e"
+    },
+    {
+      "name": "fold4.part002.bin",
+      "bytes": 26214400,
+      "sha256": "9f1a9697bd57c21c02ef9361cb2f2cc216b1ef43cd09ba7a5b9a9aac540eda6f"
+    },
+    {
+      "name": "fold4.part003.bin",
+      "bytes": 26214400,
+      "sha256": "bfcbfaa2f2115986afda2060266c6d353cb01661cdb99f17016f2f3f34ea94bd"
+    },
+    {
+      "name": "fold4.part004.bin",
+      "bytes": 26214400,
+      "sha256": "568fb68c6cf56ebe497d4895348e9292cfcf73c8682eb3a353720f5ce86394eb"
+    },
+    {
+      "name": "fold4.part005.bin",
+      "bytes": 26214400,
+      "sha256": "6be214c66e2948f0780018fc6dfe916bc0755c50ca05eb67b58eb5cf5e342c22"
+    },
+    {
+      "name": "fold4.part006.bin",
+      "bytes": 26214400,
+      "sha256": "570f180e7298a9611967304312959bb3713d39c6473eb1ca1e1b6cae96005750"
+    },
+    {
+      "name": "fold4.part007.bin",
+      "bytes": 8556859,
+      "sha256": "dfa98af56d87f572bc2aa47543eba6485f7aab4e95a9e5d74289e35a5e787b4e"
+    }
+  ]
+}

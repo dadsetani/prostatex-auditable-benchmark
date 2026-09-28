@@ -1,0 +1,48 @@
+{
+  "scope": "Technical interpretation of the ProstateX-0038 ADC physical-plane diagnostic; no clinical or anatomical review",
+  "checked_date": "2026-09-26",
+  "diagnostic_path": "prism-uploads/prostatex_0038_adc_geometry_diagnostic.json",
+  "diagnostic_sha256": "482a1bdfc5de561293a210c3c3ac73b83f3cc8941dc2f2bf8db834ce545c54b3",
+  "patient": "ProstateX-0038",
+  "channel": "ADC",
+  "series_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.144944616662841584278533906300",
+  "dicom_count": 18,
+  "orientation_max_difference": 0.0,
+  "declared_slice_thickness_mm": 3.0,
+  "declared_spacing_between_slices_mm": 3.0,
+  "normal_projection_gaps_mm_rounded": [
+    3.000001,
+    6.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.000001,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.000001,
+    3.0,
+    2.999999,
+    3.000001,
+    3.000002
+  ],
+  "missing_instance_number": 17,
+  "gap_location": {
+    "lower_instance_number": 18,
+    "upper_instance_number": 16,
+    "lower_projection_mm": 3.4594562470314316,
+    "upper_projection_mm": 9.459456354408124,
+    "gap_mm": 6.000000107376692
+  },
+  "alternate_pair_available": false,
+  "interpretation": "The irregularity is not numerical tolerance noise. One expected 3-mm plane is absent between InstanceNumber 18 and InstanceNumber 16, producing one physical 6-mm gap in an otherwise regular 3-mm series.",
+  "frozen_protocol_action": "Exclude ProstateX-0038 from the paired primary analysis as a post-download hard-check failure, retain the patient in outer fold 1, do not replace or move it, and do not fill or synthesize the missing plane.",
+  "supplementary_option": "A separately prespecified nonuniform-plane sensitivity method could be developed later, but it must not be introduced ad hoc into the frozen primary analysis.",
+  "limitations": [
+    "The cause of the absent plane is unknown.",
+    "This finding does not assess anatomy, image quality, labels, or clinical suitability."
+  ]
+}

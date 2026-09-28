@@ -1,0 +1,14 @@
+{
+  "scope": "Worksheet preparation checks only; no human visual QC has been completed",
+  "rows": 7,
+  "all_reviews_pending": true,
+  "full_keys_unique": true,
+  "duplicate_fid_positions_retained": true,
+  "pdf_pages": 7,
+  "labels_omitted_from_csv_and_pdf_titles": true,
+  "artifact_hashes_pass": true,
+  "corrupt_input_rejected": true,
+  "overwrite_rejected": true,
+  "source_bundle_unchanged": true,
+  "source_bundle_sha256": "980eda4a8eb3faed34c6e6b49f380e76dfca4287bf4bd02c60291d5f33474a5d"
+}

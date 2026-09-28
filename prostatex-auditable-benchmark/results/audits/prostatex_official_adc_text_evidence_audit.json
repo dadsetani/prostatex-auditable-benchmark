@@ -1,0 +1,147 @@
+{
+  "scope": "Local previous-DICOM SHA-256 recomputation compared with user-pasted fresh-retrieval hash evidence; fresh archive bytes were not available for direct inspection",
+  "checked_utc": "2026-09-16T19:54:42.089033+00:00",
+  "patient": "ProstateX-0000",
+  "series_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.339319789559896104041345048780",
+  "previous_bundle_path": "prism-uploads/remaining_four_review_20260915_143842_730765.zip",
+  "previous_bundle_sha256": "1ad3836fd31e7a9d3c629d2811efd1f7f59d658ab9a8de6631a6a6a719aa7f0d",
+  "previous_adc_zip_sha256_recomputed": "8a3cab0f5483e4b76968bf50179a2bc9f5b1238c9e09901c676d56bf56e45d60",
+  "fresh_adc_zip_sha256_reported_not_recomputed": "4968c58f9d62dd198fdb7e0e159e184549d8a7b4a61bf0e1c9c5bbdc185c7412",
+  "fresh_retrieval_metadata_user_reported": {
+    "status": "MATCH_EXACT_DICOM_FILES",
+    "requested_url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.3.6.1.4.1.14519.5.2.1.7311.5101.339319789559896104041345048780",
+    "final_url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.3.6.1.4.1.14519.5.2.1.7311.5101.339319789559896104041345048780",
+    "http_status": 200,
+    "started_utc": "2026-09-16T19:46:01.315882+00:00",
+    "completed_utc": "2026-09-16T19:46:03.388741+00:00",
+    "local_cache_reused": false
+  },
+  "sop_sets_equal": true,
+  "dicom_count": 19,
+  "matching_full_dicom_hashes": 19,
+  "all_reported_fresh_hashes_match_recomputed_local_hashes": true,
+  "fresh_archive_directly_inspected": false,
+  "comparisons": [
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.106253188871235674594924044939",
+      "local_dicom_sha256": "04f20b97d7722b96ce0088b02df1b5a09c8f8ffb830d9e63dda17d997157deeb",
+      "reported_fresh_dicom_sha256": "04f20b97d7722b96ce0088b02df1b5a09c8f8ffb830d9e63dda17d997157deeb",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.124415581760678116630291778207",
+      "local_dicom_sha256": "fff931a83fa3e7ea6ced725518e7ae77eec4993a97063f721d29563fb4e4b87f",
+      "reported_fresh_dicom_sha256": "fff931a83fa3e7ea6ced725518e7ae77eec4993a97063f721d29563fb4e4b87f",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.130299440989827550228287334346",
+      "local_dicom_sha256": "c26e56596b10f9536784f0f2ed3b52ca7f3ecccf02e96e151cd345ba81c2b4e7",
+      "reported_fresh_dicom_sha256": "c26e56596b10f9536784f0f2ed3b52ca7f3ecccf02e96e151cd345ba81c2b4e7",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.160486293046667934661348211038",
+      "local_dicom_sha256": "4078c4d24e1f257f140ac7d6bdab28cf633ee00a8e54de1de115c31c7699ab1b",
+      "reported_fresh_dicom_sha256": "4078c4d24e1f257f140ac7d6bdab28cf633ee00a8e54de1de115c31c7699ab1b",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.165009988535807447375020830512",
+      "local_dicom_sha256": "cba3d8070c044154859d04b4a5022d62e6cd0ec0526e2f1b957d96ceeb1b75c6",
+      "reported_fresh_dicom_sha256": "cba3d8070c044154859d04b4a5022d62e6cd0ec0526e2f1b957d96ceeb1b75c6",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.180176140556375411309720824933",
+      "local_dicom_sha256": "9154e243dce182b4218e67af21e5d27bd915aa075f7551298d7b480e73cee11b",
+      "reported_fresh_dicom_sha256": "9154e243dce182b4218e67af21e5d27bd915aa075f7551298d7b480e73cee11b",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.184989184247079463737152599806",
+      "local_dicom_sha256": "882a7754b583164939a35a1eab5d0a98e7fb3232f621a6f10d887b7035f9e915",
+      "reported_fresh_dicom_sha256": "882a7754b583164939a35a1eab5d0a98e7fb3232f621a6f10d887b7035f9e915",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.200176688250720316326773853517",
+      "local_dicom_sha256": "1c9e29e2c5dc2b2e27b1679a47b72134b7fc6932841804030439cc8c600a4f0c",
+      "reported_fresh_dicom_sha256": "1c9e29e2c5dc2b2e27b1679a47b72134b7fc6932841804030439cc8c600a4f0c",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.214487223612482428687309867310",
+      "local_dicom_sha256": "344880fd7bd5b504734762bbb721bb70d6640ff5ec1336e7412359c98b68f7c0",
+      "reported_fresh_dicom_sha256": "344880fd7bd5b504734762bbb721bb70d6640ff5ec1336e7412359c98b68f7c0",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.233943144635729618147608095491",
+      "local_dicom_sha256": "e16d6bc8edc509f471fd37c676552552d63af94ed2d79a43497266ca9363e555",
+      "reported_fresh_dicom_sha256": "e16d6bc8edc509f471fd37c676552552d63af94ed2d79a43497266ca9363e555",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.246581904183131011137182867433",
+      "local_dicom_sha256": "a85f285f9f77b96b154b0b3352054f2b488038fd8020042f3ca2f4333dd3c911",
+      "reported_fresh_dicom_sha256": "a85f285f9f77b96b154b0b3352054f2b488038fd8020042f3ca2f4333dd3c911",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.308171994275727218135624899387",
+      "local_dicom_sha256": "c0c5d8c9948eb6f922625b1e8c2ece82d6b2b9a62595f4c31c389297fdd23249",
+      "reported_fresh_dicom_sha256": "c0c5d8c9948eb6f922625b1e8c2ece82d6b2b9a62595f4c31c389297fdd23249",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.315237875332909456343841654258",
+      "local_dicom_sha256": "c14e60e94ff8aeda3157a4be8707776a888fa4fbfecee1e682bab9127683e030",
+      "reported_fresh_dicom_sha256": "c14e60e94ff8aeda3157a4be8707776a888fa4fbfecee1e682bab9127683e030",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.326551935554164783549825963729",
+      "local_dicom_sha256": "44232691d18e8bdabd0cddb3ca5d5cc05592edbc45d0ca99bbbe9e926d4c2a38",
+      "reported_fresh_dicom_sha256": "44232691d18e8bdabd0cddb3ca5d5cc05592edbc45d0ca99bbbe9e926d4c2a38",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.335281384815718591302516729281",
+      "local_dicom_sha256": "6d072500ba484b51af8baba408964fb90780cf37f072b42b30b7d9079d1f2c46",
+      "reported_fresh_dicom_sha256": "6d072500ba484b51af8baba408964fb90780cf37f072b42b30b7d9079d1f2c46",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.786562252044863677049829121605",
+      "local_dicom_sha256": "e4fe5b02a9746a4cfae2c8c2d76596dceb75ba75a30cfc55c64b4de42f45792c",
+      "reported_fresh_dicom_sha256": "e4fe5b02a9746a4cfae2c8c2d76596dceb75ba75a30cfc55c64b4de42f45792c",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.800185190139426426851393718646",
+      "local_dicom_sha256": "7cc7c292ffa78686aaafe8d93e4068e7240b26869b800dc6a53974104a3d74e8",
+      "reported_fresh_dicom_sha256": "7cc7c292ffa78686aaafe8d93e4068e7240b26869b800dc6a53974104a3d74e8",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.894946705480927581641071490849",
+      "local_dicom_sha256": "69800d34503280505bdb839c4b04417e1a7ce286dd4e6c9685b39c5a1cdcddb8",
+      "reported_fresh_dicom_sha256": "69800d34503280505bdb839c4b04417e1a7ce286dd4e6c9685b39c5a1cdcddb8",
+      "equal": true
+    },
+    {
+      "sop_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.941785002801771655159655965758",
+      "local_dicom_sha256": "c324738b7193c7385a9e0288597c5d0d3f2ebd2692fe2f75bf88be52da6d6c64",
+      "reported_fresh_dicom_sha256": "c324738b7193c7385a9e0288597c5d0d3f2ebd2692fe2f75bf88be52da6d6c64",
+      "equal": true
+    }
+  ],
+  "limitations": [
+    "Fresh file contents and network transaction not directly verified locally",
+    "One ADC series only",
+    "No official label CSV provenance verification",
+    "No cause assigned to native zeros",
+    "No anatomical or clinical validation"
+  ]
+}

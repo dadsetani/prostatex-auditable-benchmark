@@ -1,0 +1,75 @@
+{
+  "scope": "Local merge, integrity verification, report reconciliation, and numerical-boundary review of the split PROSTATEx outer-fold 3 retrieval bundle; no local DICOM decoding or clinical review",
+  "checked_date": "2026-09-27",
+  "split_manifest": "prism-uploads/fold3_manifest.json",
+  "merged_bundle": "analysis/prostatex_fold_3_retrieval_20260927_204734_778970.zip",
+  "merged_bytes": 168483683,
+  "merged_sha256": "b5a67237d878c9f03fef603a7a81e4b7ca6044d8e01dbd6872538954ab18cb96",
+  "split_parts": 7,
+  "all_part_hashes_passed": true,
+  "outer_crc_passed": true,
+  "duplicate_archive_members": false,
+  "archive_members": 82,
+  "artifact_manifest_entries": 81,
+  "artifact_hashes_passed": true,
+  "artifact_sizes_passed": true,
+  "reported_status": "REVIEW_REQUIRED",
+  "reported_execution": {
+    "created_utc": "2026-09-27T20:47:34.779218+00:00",
+    "completed_utc": "2026-09-27T20:48:46.793722+00:00",
+    "outer_fold": 3,
+    "patients": 39,
+    "series": 78,
+    "findings": 64,
+    "series_source": {
+      "TCIA_FRESH_DOWNLOAD": 78
+    }
+  },
+  "reported_results": {
+    "passed_series_geometry": 78,
+    "failed_series_geometry": 0,
+    "passed_patients": 38,
+    "excluded_patients": 1,
+    "reported_passed_findings": 61,
+    "reported_out_of_bounds_findings": 1,
+    "excluded_findings": 2,
+    "semantic_flags": 0
+  },
+  "exclusions": [
+    {
+      "patient": "ProstateX-0203",
+      "finding_count": 2,
+      "finding_status": "EXCLUDED_CROSS_CHANNEL_FRAME",
+      "reason": "T2 axial and ADC FrameOfReferenceUID values differ"
+    }
+  ],
+  "boundary_reconciliation": {
+    "patient": "ProstateX-0154",
+    "fid": "3",
+    "ClinSig": "FALSE",
+    "reported_status": "OUT_OF_BOUNDS",
+    "channel": "ADC",
+    "series_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.113587902766851049603808506140",
+    "maximum_slice_index": 18.000015664835605,
+    "slice_index_limit": 18.0,
+    "overshoot_voxels": 0.00001566483560466736,
+    "slice_spacing_mm": 3.0000000411310395,
+    "overshoot_mm": 0.00004699450745831305,
+    "interpretation": "Numerical boundary noise only. In-plane coordinates are within bounds and the nominal slice coordinate is the final ADC slice center.",
+    "reconciled_status": "PASSED_WITH_BOUNDARY_TOLERANCE",
+    "tolerance_voxels": 0.0001
+  },
+  "reconciled_results": {
+    "accepted_findings": 62,
+    "excluded_findings": 2,
+    "out_of_bounds_findings_after_tolerance": 0,
+    "effective_status": "COMPLETE_WITH_EXCLUSIONS"
+  },
+  "conclusion": "Fold 3 retrieval completed with one protocol-preserving patient exclusion. The sole reported out-of-bounds finding exceeded the final ADC slice index by only 1.57e-5 voxel (4.70e-5 mm) and is accepted as floating-point boundary noise under a 1e-4-voxel tolerance.",
+  "limitations": [
+    "The archived report retains its original REVIEW_REQUIRED status; the effective status is a documented local reconciliation.",
+    "This local reconciliation verifies bundle bytes and recorded geometry but does not repeat pydicom decoding locally.",
+    "The result does not establish anatomical registration, image quality, ADC physical units, label correctness, or clinical validity."
+  ],
+  "next_step": "Use the revised 1e-4-voxel boundary tolerance when retrieving and auditing frozen outer fold 4."
+}

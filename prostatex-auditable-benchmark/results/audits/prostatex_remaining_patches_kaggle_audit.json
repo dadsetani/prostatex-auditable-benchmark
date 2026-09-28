@@ -1,0 +1,260 @@
+{
+  "scope": "Kaggle artifact integrity and exact comparison to local recomputation with the same algorithm; not independent reader, anatomical, clinical, or dataset-wide validation",
+  "checked_utc": "2026-09-16T11:32:48.714769+00:00",
+  "uploaded_bundle_path": "prism-uploads/remaining_four_patches_20260916_113050_729565.zip",
+  "uploaded_bundle_sha256": "980eda4a8eb3faed34c6e6b49f380e76dfca4287bf4bd02c60291d5f33474a5d",
+  "source_bundle_sha256": "1ad3836fd31e7a9d3c629d2811efd1f7f59d658ab9a8de6631a6a6a719aa7f0d",
+  "archive_crc_pass": true,
+  "artifact_hashes_match": true,
+  "source_csv_hashes_match": true,
+  "geometry_matches_except_label_zip_container_hash": true,
+  "label_zip_container_hashes": {
+    "kaggle": "f0622e33afc0b84f3be1b27dfbf2b32260784ef8730401402e00d058763a9a5f",
+    "local": "fe862406213c058d7d714439f86a8df15efea7507aa7da3732a10fd9347c7c5e"
+  },
+  "shape": [
+    7,
+    2,
+    100,
+    100
+  ],
+  "dtype": "float32",
+  "finite_values": true,
+  "patient_count": 4,
+  "full_finding_key_count": 7,
+  "labels": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+  ],
+  "all_14_channel_patches_exactly_equal": true,
+  "max_absolute_difference": 0.0,
+  "patch_array_sha256": "d0d6691a646fb312b7af633e32bd6452eaaaf94296e67365e4b89bfb8c3ca291",
+  "metadata_npz_full_keys_labels_and_positions_match": true,
+  "bounds_match_and_no_outside_points": true,
+  "preview_pdf_pages": 7,
+  "kaggle_software": {
+    "python": "3.12.13",
+    "numpy": "2.0.2",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.0"
+  },
+  "local_recomputation_software": {
+    "python": "3.13.15",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0"
+  },
+  "patch_comparison": [
+    {
+      "array_index": 0,
+      "patient": "ProstateX-0000",
+      "fid": "1",
+      "pos_mm": [
+        25.7457,
+        31.8707,
+        -38.511
+      ],
+      "channel": "T2_axial",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 0,
+      "patient": "ProstateX-0000",
+      "fid": "1",
+      "pos_mm": [
+        25.7457,
+        31.8707,
+        -38.511
+      ],
+      "channel": "ADC",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 1,
+      "patient": "ProstateX-0003",
+      "fid": "1",
+      "pos_mm": [
+        22.1495,
+        31.2717,
+        -2.45933
+      ],
+      "channel": "T2_axial",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 1,
+      "patient": "ProstateX-0003",
+      "fid": "1",
+      "pos_mm": [
+        22.1495,
+        31.2717,
+        -2.45933
+      ],
+      "channel": "ADC",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 2,
+      "patient": "ProstateX-0003",
+      "fid": "2",
+      "pos_mm": [
+        -21.2871,
+        19.3995,
+        19.7429
+      ],
+      "channel": "T2_axial",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 2,
+      "patient": "ProstateX-0003",
+      "fid": "2",
+      "pos_mm": [
+        -21.2871,
+        19.3995,
+        19.7429
+      ],
+      "channel": "ADC",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 3,
+      "patient": "ProstateX-0004",
+      "fid": "1",
+      "pos_mm": [
+        -7.69665,
+        3.64226,
+        23.1659
+      ],
+      "channel": "T2_axial",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 3,
+      "patient": "ProstateX-0004",
+      "fid": "1",
+      "pos_mm": [
+        -7.69665,
+        3.64226,
+        23.1659
+      ],
+      "channel": "ADC",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 4,
+      "patient": "ProstateX-0005",
+      "fid": "0",
+      "pos_mm": [
+        -14.5174331665039,
+        49.4428329467773,
+        20.7815246582031
+      ],
+      "channel": "T2_axial",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 4,
+      "patient": "ProstateX-0005",
+      "fid": "0",
+      "pos_mm": [
+        -14.5174331665039,
+        49.4428329467773,
+        20.7815246582031
+      ],
+      "channel": "ADC",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 5,
+      "patient": "ProstateX-0005",
+      "fid": "1",
+      "pos_mm": [
+        -38.6276,
+        42.2781,
+        21.4084
+      ],
+      "channel": "T2_axial",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 5,
+      "patient": "ProstateX-0005",
+      "fid": "1",
+      "pos_mm": [
+        -38.6276,
+        42.2781,
+        21.4084
+      ],
+      "channel": "ADC",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 6,
+      "patient": "ProstateX-0005",
+      "fid": "1",
+      "pos_mm": [
+        -22.0892639160156,
+        25.4668045043945,
+        22.8791542053223
+      ],
+      "channel": "T2_axial",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "array_index": 6,
+      "patient": "ProstateX-0005",
+      "fid": "1",
+      "pos_mm": [
+        -22.0892639160156,
+        25.4668045043945,
+        22.8791542053223
+      ],
+      "channel": "ADC",
+      "array_equal": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    }
+  ],
+  "code_sha256": {
+    "analysis/prostatex_geometry_check.py": "2aa1cb9db6c40913fdcf6b7f96755f7accc3bf975085f4579a5e12b1697a72e2",
+    "analysis/prostatex_patch_pilot.py": "1e7a2026e95bcc0863ac4b06a14a1d5dea31185f2a00b8df2c25928667fbf664",
+    "analysis/prostatex_remaining_patches_kaggle.py": "5690c7d4e6b94ff958b9bd3681b64f04c51769c11a84f686e832e31f50983308"
+  },
+  "not_validated": [
+    "anatomical registration",
+    "clinical image quality",
+    "ADC physical units",
+    "model performance"
+  ]
+}
