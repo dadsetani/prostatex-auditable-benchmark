@@ -1,13 +1,37 @@
 cff-version: 1.2.0
-message: "If you use this benchmark, please cite the associated manuscript."
-title: "Clinically Significant Prostate Cancer Classification from T2-Weighted and ADC MRI Patches: An Auditable PROSTATEx Study"
+message: "If you use this benchmark, please cite the software record and the associated manuscript."
+title: "Clinically significant prostate cancer classification from T2-weighted and apparent diffusion coefficient MRI patches: an auditable PROSTATEx study"
 type: software
+
 authors:
-  - family-names: Dubayan
-    given-names: Mohammad Rashid
-  - family-names: Javadi
-    given-names: Hamid Haj Seyyed
-  - family-names: Hasan
-    given-names: Hasanain Flayyih
-version: 0.1.0
-date-released: 2026-09-28
+  - family-names: "Dubayan"
+    given-names: "Mohammad Rashid"
+    affiliation: "Department of Computer Engineering, Shahed University, Tehran 3319118651, Iran"
+
+  - family-names: "Dadsetani"
+    given-names: "Muhammad Kourosh"
+    email: "m.dadsetani@srbiau.ac.ir"
+    orcid: "https://orcid.org/0009-0002-9540-7593"
+    affiliation: "Department of Computer Engineering, Shahed University, Tehran 3319118651, Iran"
+
+  - family-names: "Javadi"
+    given-names: "Hamid Haj Seyyed"
+    affiliation: "Department of Computer Engineering, Shahed University, Tehran 3319118651, Iran"
+
+  - family-names: "Hasan"
+    given-names: "Hasanain Flayyih"
+    affiliation: "Department of Cybersecurity, College of Computer Science and Information Technology, Wasit University, Iraq"
+
+version: 0.1.1
+date-released: 2026-09-29
+license: MIT
+repository-code: "https://github.com/dadsetani/prostatex-auditable-benchmark"
+doi: "10.5281/zenodo.23024964"
+
+keywords:
+  - prostate cancer
+  - magnetic resonance imaging
+  - PROSTATEx
+  - apparent diffusion coefficient
+  - machine learning
+  - reproducibility
